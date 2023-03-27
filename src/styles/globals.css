@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+veryepiccard {
+    background-color: white;
+}
+
+veryepiccard:hover {
+    transform: rotateY(180deg)
+}

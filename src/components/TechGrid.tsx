@@ -6,20 +6,16 @@ interface TechGridProps {
 }
 
 export default function TechGrid(props: TechGridProps) {
-    return props.hovered ? (
-        <div className="grid grid-cols-4 gap-4">
-            <TechGridItem>bruh</TechGridItem>
-            <TechGridItem>bruh</TechGridItem>
-            <TechGridItem>bruh</TechGridItem>
-            <TechGridItem>bruh</TechGridItem>
-            <TechGridItem>bruh</TechGridItem>
-            <TechGridItem>bruh</TechGridItem>
-            <TechGridItem>bruh</TechGridItem>
-            <TechGridItem>bruh</TechGridItem>
-        </div>
-    ) : (
-        <div className="">
-            
+    return (
+        <div className="grid grid-cols-4 gap-5 w-full">
+            <TechGridItem grow={false}>bruh</TechGridItem>
+            <TechGridItem grow={false}>bruh</TechGridItem>
+            <TechGridItem grow={false}>bruh</TechGridItem>
+            <TechGridItem grow={false}>bruh</TechGridItem>
+            <TechGridItem grow={false}>bruh</TechGridItem>
+            <TechGridItem grow={false}>bruh</TechGridItem>
+            <TechGridItem grow={false}>bruh</TechGridItem>
+            <TechGridItem grow={false}>bruh</TechGridItem>
         </div>
     )
 }
