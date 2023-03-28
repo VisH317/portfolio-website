@@ -3,7 +3,8 @@ import Image from 'next/image'
 
 interface TechGridItemProps {
     children: React.ReactNode,
-    grow: boolean
+    grow: boolean,
+    hidden: boolean
 }
 
 export default function TechGridItem(props: TechGridItemProps) {
@@ -23,11 +24,11 @@ export default function TechGridItem(props: TechGridItemProps) {
     }
 
     return (
-        <div onMouseOver={mouseOver} onMouseOut={mouseOut} className="w-full aspect-square overflow-hidden">
-        <div className={`bg-slate-100 p-5 rounded-lg w-full aspect-square duration-300`+val} style={{transformStyle: "preserve-3d", transform:r, backfaceVisibility: 'hidden'}}>
-            {props.children}
-        </div>
-        <div className="bg-slate-500 p-5 rounded-lg w-full aspect-square duration-300 relative -top-full" style={{transformStyle: "preserve-3d", transform:b, backfaceVisibility: 'hidden'}}></div>
+        <div onMouseOver={mouseOver} onMouseOut={mouseOut} className={`w-full aspect-square overflow-hidden ${props.hidden ? "sm:hidden md:hidden lg:block xl:hidden" : ""}`}>
+            <div className={`bg-slate-100 p-5 rounded-lg w-full aspect-square duration-300`+val} style={{transformStyle: "preserve-3d", transform:r, backfaceVisibility: 'hidden'}}>
+                {props.children}
+            </div>
+            <div className="bg-slate-500 p-5 rounded-lg w-full aspect-square duration-300 relative -top-full" style={{transformStyle: "preserve-3d", transform:b, backfaceVisibility: 'hidden'}}></div>
         </div>
     )
 }

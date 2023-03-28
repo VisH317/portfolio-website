@@ -2,8 +2,9 @@ import React from 'react'
 
 export default function Landing() {
     return (
-        <div className='container mx-auto w-full h-2/3 bg-violet-700 flex items-center justify-center flex-col gap-5 max-w-full'>
+        <div className='container mx-auto w-full h-3/4 bg-purple-700 flex items-center justify-center sm:py-20 flex-col gap-5 max-w-full'>
             {/* <div className="bg-purple-100 p-5 rounded-3xl flex items-center justify-center"> */}
+            <div className="sm:h-32 md:hidden lg:hidden xl:hidden"></div>
             <p className='text-5xl text-white font-bold'>Hello! Im Vishrut</p>
             {/* </div> */}
             <div className="w-2/5">

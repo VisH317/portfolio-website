@@ -22,8 +22,8 @@ export default function Home() {
       <div className="container mx-auto max-w-screen h-screen max-w-full">
         <Navbar/>
         <Landing/>
-        <About/>
         <Slideshow/>
+        <About/>
         <Footer/>
       </div>
     </>
