@@ -5,7 +5,7 @@ export default function Landing() {
         <div className='container mx-auto w-full h-3/4 bg-purple-700 flex items-center justify-center sm:py-20 flex-col gap-5 max-w-full'>
             {/* <div className="bg-purple-100 p-5 rounded-3xl flex items-center justify-center"> */}
             <div className="sm:h-32 md:hidden lg:hidden xl:hidden"></div>
-            <p className='text-5xl text-white font-bold'>Im Vishrut! A Software Developer</p>
+            <p className='text-5xl text-white text-center font-bold'>Im Vishrut! A Software Developer</p>
             {/* </div> */}
             <div className="w-2/5">
             <p className="text-lg text-purple-100 font-light text-center">Lorem ipsum dolor sit amet james is a funny man. Aaron is hilarious and Eshan is a literal NPC Yay. Hi I love u. Sup guys im bored hola como estas im in physics rn and i just took a precalc test! YAAYAYAYY</p>

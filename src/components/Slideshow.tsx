@@ -26,9 +26,9 @@ export default function Slideshow() {
                 <p className="text-6xl font-bold bg-gradient-to-r from-violet-400 to-indigo-500 bg-clip-text text-transparent p-4 text-center">Projects Completed</p>
                 <div className="flex flex-row gap-5 h-3/4 items-center justify-center px-10 w-full">
                     <div className="w-1/12 flex justify-center"><i className="fa fa-caret-left fa-lg text-8xl text-slate-200 hover:text-slate-400 duration-300 hover:shadow-2xl" onClick={decrease}/></div>
-                    <SlideshowItem proj={projects[index-1<0?projects.length-1:index-1]}/>
-                    <SlideshowItem proj={projects[index]}/>
-                    <SlideshowItem proj={projects[index+1>=projects.length?0:index+1]}/>
+                    <SlideshowItem proj={projects[index-1<0?projects.length-1:index-1]} invis={true}/>
+                    <SlideshowItem proj={projects[index]} invis={false}/>
+                    <SlideshowItem proj={projects[index+1>=projects.length?0:index+1]} invis={true}/>
                     <div className="w-1/12 flex justify-center"><i className="fa fa-caret-right fa-lg text-8xl text-slate-200 hover:text-slate-400 duration-300 hover:shadow-2xl" onClick={increase}/></div>
                 </div>
             </div>
