@@ -44,4 +44,8 @@ veryepiccard:hover {
     }
 
     .newtest:hover {--_p: 100%}
+
+    .carousel-item {
+        height: 100%
+    }
 }

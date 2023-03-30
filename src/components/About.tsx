@@ -9,12 +9,12 @@ export default function About() {
     const offHover = () => setHovered(false)
 
     return (
-        <div className='lg:flex lg:flex-row w-full md:flex md:flex-col h-[60%] sm:flex sm:flex-col'>
-            <div className='hover:w-[120%] w-full p-10 flex h-full items-center flex-col gap-10 duration-300' onMouseOver={onHover} onMouseOut={offHover}>
+        <div className='lg:flex lg:flex-row w-full md:flex md:flex-col xl:h-[60%] lg:h-[125%] sm:flex sm:flex-col'>
+            <div className='lg:hover:w-[120%] xl:hover:w-[120%] w-full p-10 flex h-full items-center flex-col gap-10 duration-300' onMouseOver={onHover} onMouseOut={offHover}>
                 <p className="text-6xl font-semibold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent p-4 text-center">My Technologies</p>
                 <TechGrid hovered={hovered}/>
             </div> 
-            <div className="hover:w-[120%] flex w-full bg-slate-200 text-purple-100 p-10 sm:flex items-center sm:items-center flex-col gap-10 duration-300">
+            <div className="lg:hover:w-[120%] xl:hover:w-[120%] flex w-full bg-slate-200 text-purple-100 p-10 sm:flex items-center sm:items-center flex-col gap-10 duration-300">
                 <p className="text-6xl font-semibold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent p-4">About Me</p>
                 <div className="grid md:grid-cols-2 lg:grid-cols-2 sm:grid-cols-1 sm:gap-10 w-full h-2/3">
                     <div className="px-5">
