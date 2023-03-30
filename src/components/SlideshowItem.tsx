@@ -3,10 +3,11 @@ import { Project } from '@/lib/projects'
 
 interface SlideshowItemProps {
     proj: Project
+    invis: boolean
 }
 
 export default function SlideshowItem(props: SlideshowItemProps) {
-    const { proj } = props
+    const { proj, invis } = props
     const [desc, setDesc] = useState(false)
     const onDesc = () => setDesc(true)
     const offDesc = () => setDesc(false)
