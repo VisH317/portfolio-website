@@ -10,6 +10,9 @@ module.exports = {
       'lg': '1500px',
       'xl': '1600px',
       // '2xl': '1536px',
+    },
+    extend: {
+      
     }
   },
   plugins: [
