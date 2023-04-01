@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export default function Landing() {
     return (
         <div className='container mx-auto w-full h-3/4 bg-purple-700 flex items-center justify-center sm:py-20 flex-col gap-5 max-w-full'>
