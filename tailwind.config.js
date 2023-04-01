@@ -10,6 +10,19 @@ module.exports = {
       'lg': '1500px',
       'xl': '1600px',
       // '2xl': '1536px',
+    },
+    extend: {
+      backgroundImage: {
+        'react': "url('../../react-1.svg')",
+        'next': "url('../../public/next.svg')",
+        'flask': "url('../../public/flask.png')",
+        'go': "url('../../public/go.png')",
+        'cpp': "url('../../public/C++.png')",
+        'node': "url('../../public/node.png')",
+        'python': "url('../../public/python.png')",
+        'pytorch': "url('../../public/pytorch.png')",
+        'js': "url('../../public/javascript.png')",
+      }
     }
   },
   plugins: [
