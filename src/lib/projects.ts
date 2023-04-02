@@ -1,41 +1,40 @@
 
 export interface Project {
-    name: String,
-    desc: String,
+    name: string,
+    desc: string,
     technologies: String[],
-    url: String,
+    url: string,
+    image: string
 }
 
 const projects: Project[] = [
     {
-        name: "test 1",
-        desc: "this is a test 1 and a very epic project. It uses some technologies and is a very dope project. I like it very much and it is very fun. It probably uses a lot of coding languages and framworks",
-        technologies: ["BRO", "asdf", "awoeifjasdf"],
-        url: "placeholder"
+        name: "Video Inpainting App",
+        desc: "This project involves the creation of a mobile app where you can upload a video and select a certain part of object from the video to be removed. It then uses AI Video Inpainting to remove the selected object and replace the background and downloads it back to your phone",
+        technologies: ["React Native", "Python", "FastAPI", "PyTorch", "JavaScript", "Android"],
+        url: "https://github.com/VisH317/deep-video-inpainting-server",
+        image: "inpaint.PNG"
     },
     {
-        name: "test 2",
-        desc: "this is a test 2 and a very epic project. It uses some technologies and is a very dope project. I like it very much and it is very fun. It probably uses a lot of coding languages and framworks",
-        technologies: ["BRO", "asdf", "awoeifjasdf"],
-        url: "placeholder"
+        name: "InternetGPT",
+        desc: "A Python library that provides smart internet access to ChatGPT for integration into internet-powered ChatGPT apps in Python. It uses a smart recursive search to determine important and rare words that need more context and compiles information on them to provide to ChatGPT",
+        technologies: ["Python", "OpenAI", "Selenium", "Machine Learning", "CircleCI"],
+        url: "https://github.com/VisH317/InternetGPT",
+        image: "internetgpt.PNG"
     },
     {
-        name: "test 3",
-        desc: "this is a test 3 and a very epic project. It uses some technologies and is a very dope project. I like it very much and it is very fun. It probably uses a lot of coding languages and framworks",
-        technologies: ["BRO", "asdf", "awoeifjasdf"],
-        url: "placeholder"
+        name: "Question Generator",
+        desc: "A full stack app with an AI powered backend that allows users to generate practice quiz questions based on notes from different classes. It works using a pretrained T5 transformer model to take the notes as input and output possible questions. It also has a frontend UI written with React and designed with Figma",
+        technologies: ["PyTorch", "HuggingFace", "Flask", "Flask Auth", "PostgreSQL", "React", "Figma", "Python", "JavaScript"],
+        url: "https://github.com/VisH317/QuestionGenerationServer",
+        image: "qgen.PNG"
     },
     {
-        name: "test 4",
-        desc: "this is a test 4 and a very epic project. It uses some technologies and is a very dope project. I like it very much and it is very fun. It probably uses a lot of coding languages and framworks",
-        technologies: ["BRO", "asdf", "awoeifjasdf"],
-        url: "placeholder"
-    },
-    {
-        name: "test 5",
-        desc: "this is a test 5 and a very epic project. It uses some technologies and is a very dope project. I like it very much and it is very fun. It probably uses a lot of coding languages and framworks",
-        technologies: ["BRO", "asdf", "awoeifjasdf"],
-        url: "placeholder"
+        name: "Better Classroom",
+        desc: "A full stack app that is an enhanced version of google classroom. It creates monitored sessions for lectures along with interactive questions and surveys to be asked by teachers. It also provides services for monitoring during tests and makes group work organization easier. It also utilizes chatbot technology to answer student questions",
+        technologies: ["Next.js", "Material UI", "JavaScript", "TypeScript", "Go", "Python", "OpenAI", "GoFiber", "Express", "Passport", "Docker", "MongoDB", "PostgreSQL", "Redis", "WebSocket"],
+        url: "https://github.com/VisH317/tsa-software-dev",
+        image: "classroom.PNG"
     },
 ]
 

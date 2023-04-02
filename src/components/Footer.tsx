@@ -8,8 +8,8 @@ export default function Footer() {
                     <p className='text-slate-500'>Contact:</p>
                 </div>
                 <div className="flex items-center justify-center w-[130%] text-center text-slate flex-col">
-                    <p className='text-slate-500'>LinkedIn: <a className="newtest">DUMMY LINKE FOR NOW</a></p>
-                    <p className='text-slate-500'>GitHub: <a className="newtest">DUMMY LINKE FOR NOW</a></p>
+                    <p className='text-slate-500'>LinkedIn: <a className="newtest" href="https://www.linkedin.com/in/vishrut-thoutam-246027245/">Vishrut Thoutam</a></p>
+                    <p className='text-slate-500'>GitHub: <a className="newtest" href="https://www.github.com/VisH317">VisH317</a></p>
                 </div>
             </div>
         </div>

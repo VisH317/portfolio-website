@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
-// import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 interface TechGridItemProps {
     children: React.ReactNode,
@@ -27,11 +27,13 @@ export default function TechGridItem(props: TechGridItemProps) {
     }
 
     return (
-        <div onMouseOver={mouseOver} onMouseOut={mouseOut} className={`w-full aspect-square overflow-hidden ${props.hidden ? "sm:hidden md:hidden lg:block xl:hidden" : ""}`}>
-            <div className={`bg-${props.image} bg-center bg-contain bg-no-repeat p-5 rounded-lg w-full aspect-square duration-300`+val} style={{transformStyle: "preserve-3d", transform:r, backfaceVisibility: 'hidden'}}>
-                {props.children}
+        <div onMouseOver={mouseOver} onMouseOut={mouseOut} className={`w-full aspect-square overflow-hidden  drop-shadow-xl ${props.hidden ? "sm:hidden md:hidden lg:block xl:hidden" : ""}`}>
+            <div className={`bg-center bg-contain bg-no-repeat p-20 rounded-lg w-full aspect-square overflow-hidden duration-300`+val} style={{transformStyle: "preserve-3d", transform:r, backfaceVisibility: 'hidden'}}>
+                <Image src={`/${props.image}`} fill style={{objectFit: "contain"}} alt={props.image}/>
             </div>
-            <div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="bg-slate-500 p-5 rounded-lg w-full aspect-square duration-300 relative -top-full" style={{transformStyle: "preserve-3d", transform:b, backfaceVisibility: 'hidden'}}></div>
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="bg-slate-600 p-5 rounded-lg w-full aspect-square duration-300 relative -top-full flex flex-col justify-center items-center" style={{transformStyle: "preserve-3d", transform:b, backfaceVisibility: 'hidden'}}>
+                {props.children}
+            </motion.div>
         </div>
     )
 }
