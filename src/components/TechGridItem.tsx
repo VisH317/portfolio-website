@@ -31,7 +31,7 @@ export default function TechGridItem(props: TechGridItemProps) {
             <div className={`bg-center bg-contain bg-no-repeat p-20 rounded-lg w-full aspect-square overflow-hidden duration-300`+val} style={{transformStyle: "preserve-3d", transform:r, backfaceVisibility: 'hidden'}}>
                 <Image src={`/${props.image}`} fill style={{objectFit: "contain"}} alt={props.image}/>
             </div>
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="bg-slate-600 p-5 rounded-lg w-full aspect-square duration-300 relative -top-full flex flex-col justify-center items-center" style={{transformStyle: "preserve-3d", transform:b, backfaceVisibility: 'hidden'}}>
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="bg-slate-600 h-full p-5 rounded-lg w-full aspect-square duration-300 relative -top-full flex flex-col justify-center items-center" style={{transformStyle: "preserve-3d", transform:b, backfaceVisibility: 'hidden'}}>
                 {props.children}
             </motion.div>
         </div>
