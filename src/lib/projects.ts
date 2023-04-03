@@ -10,7 +10,7 @@ export interface Project {
 const projects: Project[] = [
     {
         name: "Video Inpainting App",
-        desc: "This project involves the creation of a mobile app where you can upload a video and select a certain part of object from the video to be removed. It then uses AI Video Inpainting to remove the selected object and replace the background and downloads it back to your phone",
+        desc: "This project involves the creation of a mobile app where you can upload a video and select a certain part of object from the video to be removed. It then uses AI Video Inpainting to remove the selected object and replace the background.",
         technologies: ["React Native", "Python", "FastAPI", "PyTorch", "JavaScript", "Android"],
         url: "https://github.com/VisH317/deep-video-inpainting-server",
         image: "inpaint.PNG"
@@ -25,14 +25,14 @@ const projects: Project[] = [
     {
         name: "Question Generator",
         desc: "A full stack app with an AI powered backend that allows users to generate practice quiz questions based on notes from different classes. It works using a pretrained T5 transformer model to take the notes as input and output possible questions. It also has a frontend UI written with React and designed with Figma",
-        technologies: ["PyTorch", "HuggingFace", "Flask", "Flask Auth", "PostgreSQL", "React", "Figma", "Python", "JavaScript"],
+        technologies: ["PyTorch", "HuggingFace", "Flask", "PostgreSQL", "React", "Figma", "Python", "JavaScript"],
         url: "https://github.com/VisH317/QuestionGenerationServer",
         image: "qgen.PNG"
     },
     {
         name: "Better Classroom",
-        desc: "A full stack app that is an enhanced version of google classroom. It creates monitored sessions for lectures along with interactive questions and surveys to be asked by teachers. It also provides services for monitoring during tests and makes group work organization easier. It also utilizes chatbot technology to answer student questions",
-        technologies: ["Next.js", "Material UI", "JavaScript", "TypeScript", "Go", "Python", "OpenAI", "GoFiber", "Express", "Passport", "Docker", "MongoDB", "PostgreSQL", "Redis", "WebSocket"],
+        desc: "A full stack app that is an enhanced version of google classroom. It creates monitored sessions for lectures along with interactive questions and surveys to be asked by teachers. It also provides services for monitoring during tests and makes group work organization easier",
+        technologies: ["Next.js", "JavaScript", "TypeScript", "Go", "Python", "OpenAI", "GoFiber", "Express", "Passport", "Docker", "MongoDB", "PostgreSQL", "Redis"],
         url: "https://github.com/VisH317/tsa-software-dev",
         image: "classroom.PNG"
     },
