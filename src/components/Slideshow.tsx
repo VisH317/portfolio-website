@@ -29,7 +29,11 @@ const responsive = {
     }
   };
 
-export default function Slideshow() {
+interface SlideshowProps {
+    sref: React.Ref<HTMLDivElement>
+}
+
+export default function Slideshow(props: SlideshowProps) {
     // for image dimming: background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('landingpagepic.jpg');
 
     // setup entries and hover effects for them
@@ -63,7 +67,7 @@ export default function Slideshow() {
             <Head>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
             </Head>
-            <div className="bg-slate-800 w-full lg:h-2/3 xl:h-1/2 md:h-2/3 sm:h-2/3 w-full flex flex-col justify-center p-5 gap-5">
+            <div ref={props.sref} className="bg-slate-800 w-full lg:h-2/3 xl:h-1/2 md:h-2/3 sm:h-2/3 w-full flex flex-col justify-center p-5 gap-5">
                 <p className="text-6xl font-bold bg-gradient-to-r from-violet-400 to-indigo-500 bg-clip-text text-transparent p-4 text-center">Projects Completed</p>
                 <Carousel
                     responsive={responsive}
